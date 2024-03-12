@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurando DVCS Git</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <a href="index.html" id="logo-principal"><img src="/media/principal.png" alt="Home"></a>
+        <h1 id="principal">Configurando o Git</h1>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="pag2.html">VCS</a></li>
+                    <li><a href="pag3.html">Git e GitHub</a></li>
+                    <li><a href="pag4.html">Configurando o Git</a></li>
+                    <li><a href="pag5.html">Repositórios</a></li>
+                    <li><a href="pag6.html">Baixando Alterações</a></li>
+                    <li><a href="pag7.html">Branches</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <h1>Configurando o Git</h1>
+        <p>Para iniciarmos a nossa jornada com a criação de grandes repositórios que irão conter os nossos projetos, precisamos primeiro configurar devidamente o nosso DVCS, para que não haja problemas de autenticidade mais para frente.</p>
+        <p>Com isso, iniciaremos com o download do <a href="https://git-scm.com/downloads" rel="external" target="_blank" class="link">Git Bash</a>, o DVCS do Git.</p>
+        <p>Agora, criamos uma nova pasta para iniciar a nossa jornada com o Git Bash. <img src="/media/abrir_git_bash.png" alt="abrir git bash" style="margin-top: 8px;"></p>
+        <p>Com o Git Bash aberto, nos deparamos com essa tela:<img src="/media/git_bash.png" alt="git bash" style="margin-top: 8px;"></p>
+        <p>Nesta tela inicial, podemos ver três coisas importantes: 
+            <ol><li>Nome de Usuário</li>
+                <li>Nome do Computador</li>
+                <li>Endereço da pasta em que abrimos o Git Bash</li>
+            </ol>
+        Em outras palavras, usuário@nome do computador, nome do computador ~/endereço da pasta.
+        </p>
+        <p>Para sabermos a variedade de coisas que podemos fazer, basta digitar <span class="codigo">git config</span></p>
+        <p>Quando nos deparamos com a lista de comandos, é importante saber o que os três primeiros representam, --global, --system e --local, que são os "lugares" em que as variáveis ficam armazenadas.
+            <ol style="list-style: circle;">
+                <li>--global: Referencia todo tipo de alteração feita no usuário</li>
+                <li>--system: Referencia todo o tipo de alteração feita ao sistema como um todo, como exemplo, o Windows</li>
+                <li>--local: Referencia todo o tipo de alteração feita em um repositório específico</li>
+            </ol>
+        </p>
+        <p>Agora, podemos configurar o nosso nome e e-mail do git, com os comandos <span class="codigo">git config --global user.name</span> e <span class="codigo">git config --global user-email</span>, que ficará assim: <img src="/media/conf_bash.png" alt="Git Bash configuração" style="margin-top: 8px;"></p>
+        <p>Para verificar a lista de configurações realizadas, utilizamos o comando <span class="codigo">git config --global --list</span>, sendo --global porquê é referente as configurações realizadas ao usuário.</p>
+        <p>Para mais informações sobre configurações Git, <a href="https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup" rel="external" target="_blank" class="link">clique aqui</a></p>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="box1">Página Web desenvolvida como material de estudo do curso do <a href="https://web.dio.me/home" target="_blank">Digital Inovation One</a></div>
+            <div class="box1">Curso de Microsoft Azure AI Fundamentals AI-900, Git e GitHub, lecionado por <a href="https://github.com/elidianaandrade/dio-curso-git-github" target="_blank">Elidiana Andrade</a></div>
+            <div class="box1"><img src="/media/inst.png" alt="Meu LinkedIn" style="width: 80px; height: 80px; margin-top: 8px; margin-left: 30px; margin-right: 25px;"><a href="https://www.instagram.com/gustavo_locutor/" target="_blank" rel="external">Meu Instagram</a></div>
+            <div class="box1"><img src="/media/github.png" alt="Meu GitHub" style="width: 80px; height: 80px; margin-top: 8px; margin-left: 30px; margin-right: 25px;"><a href="https://github.com/Navarrasa" target="_blank" rel="external">Meu GitHub</a></div>
+            <div class="box1"><img src="/media/In.png" alt="Meu LinkedIn" style="width: 80px; height: 80px; margin-top: 8px; margin-left: 30px; margin-right: 25px;"><a href="https://www.linkedin.com/in/gustavo-bruno-90344a272/" target="_blank" rel="external">Meu LinkedIn</a></div>
+        </div>
+    </footer>
+</body>
+</html>

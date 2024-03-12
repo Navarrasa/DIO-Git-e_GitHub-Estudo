@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Versionamento de Código</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <a href="index.html" id="logo-principal"><img src="/media/principal.png" alt="Home"></a>
+        <h1 id="principal">VCS</h1>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="pag2.html">VCS</a></li>
+                    <li><a href="pag3.html">Git e GitHub</a></li>
+                    <li><a href="pag4.html">Configurando o Git</a></li>
+                    <li><a href="pag5.html">Repositórios</a></li>
+                    <li><a href="pag6.html">Baixando Alterações</a></li>
+                    <li><a href="pag7.html">Branches</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <h1>Version Control System</h1>
+        <p>Sistema de Controle de Versão &#40;VCS&#41;, são utilizados na Engenharia de Software para gerenciar as alterações em programas, projetos, documentos e outras coleções de informações. Este sistema facilita na organização de dados, na agilidade e visualização geral dos dados. Um exemplo de agilidade que o VCS nos traz: Um programador termina o seu código em um novo aplicativo para dispositivos Android, porém, um bug, um erro inesperado aconteceu. Utilizando o VCS, o programador pode baixar um código antes das modificações realizadas e comparar para encontrar o motivo do bug e corrigir-lo mais rapidamente.</p>
+        <h1>Local Version Control System</h1>
+        <p>O Sistema de Controle de Versão Local é aquele em que os arquivos estão localizados no próprio computador em uma pasta onde se cria diferentes versões para o mesmo arquivo, como exemplo arquivo.1, arquivo.2, e por assim em diante. Não é muito recomendado utilizar este método de Versionamento de Código &#40;VCS&#41;, pois todo o conteúdo estará em um único arquivo, em um único computador, ou seja, outros programadores não conseguirão trabalhar com o conteúdo do diretório, e caso haja algum problema com o computador em que estão armazenados, tudo será perdido.</p>
+        <p>A ferramenta mais conhecida para VCS Locais é o RCS &#40;Revision Control System&#41;, que funciona mantendo conjuntos de alterações &#40;ou seja, as diferenças entre os arquivos&#41; em um formato especial no disco; ele pode, em seguida, re-criar como qualquer arquivo se parecia em qualquer ponto no tempo, adicionando-se todas as alterações.</p>
+        <h1>Centralized Version Control System</h1>
+        <p>O Sistema de Controle de Versão Centralizado é aquele em que há um servidor que contém todos os arquivos e um grande números de desenvolvedores que podem acessar este servidor, e atuar no mesmo projeto. Diferente do VCS Local, o VCS Centralizado é mais eficiente pois agora você sabe onde o seu colega está trabalhando no código, o gerenciamento dos arquivos por parte do administrador é muito mais ágil, pois todos os arquivos trabalhados estão em um único servidor. Mesmo sendo um VCS muito utilizado por trazer agilidade, havia ineficiências que foram percebidas ao longo do tempo. A principal ineficiência era a extrema dependência do servidor para a atualização dos arquivos trabalhados, ou seja, caso o servidor ficasse fora do ar, insidponível, toda a equipe seria prejudicada, e caso houvesse alguma falha durante o processo de gravação de arquivos no servidor, todo o trabalho do desenvolvedor seria perdido.</p>
+        <p>Alguns sistemas muito conhecidos que foram utilizados no VCS Centralizado foram o CVS, Subversion e Perforce.</p>
+        <h1>Distributed Version Control System</h1>
+        <p>O Sistema de Controle de Versão Distribuído é aquele em que há o servidor com os arquivos, porém os desenvolvedores conseguem clonar os arquivos para um repositório local, assim, caso o servidor fique indisponível, o prórpio repositório do desenvolvedor pode ser utilizado para restaurar o servidor. Cada clone é um backup de todos os dados do servidor. Além disso muitos sistemas trabalham com diversos repositórios, ou seja, é possível colaborar em diferentes grupos de pessoas ao mesmo tempo dentro do mesmo projeto, pois todos os arquivos serão iguais e todos tem acesso a eles.</p>
+        <p>Algumas ferramentas muito utilizadas para DVCSs, são: Git e Mercurial, as duas ferramentas mais utilizadas globalmente por terem muitos recursos e serem simples de manusear. o Git é muito utilizado em projetos open source e possui características marcantes como a sua velocidade, que é a maior que os demais sistemas por necessitar apenas de recursos locais. O Mercurial é utilizado em desenvolvimento de projetos de grande porte, apresentando melhor resultado em SO's &#40;Sistemas Operacionais&#41;, compatíveis com a linguagem de programação Python, que é a linguagem em que o Mercurial foi desenvolvido.</p>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="box1">Página Web desenvolvida como material de estudo do curso do <a href="https://web.dio.me/home" target="_blank">Digital Inovation One</a></div>
+            <div class="box1">Curso de Microsoft Azure AI Fundamentals AI-900, Git e GitHub, lecionado por <a href="https://github.com/elidianaandrade/dio-curso-git-github" target="_blank">Elidiana Andrade</a></div>
+            <div class="box1"><img src="/media/inst.png" alt="Meu LinkedIn" style="width: 80px; height: 80px; margin-top: 8px; margin-left: 30px; margin-right: 25px;"><a href="https://www.instagram.com/gustavo_locutor/" target="_blank" rel="external">Meu Instagram</a></div>
+            <div class="box1"><img src="/media/github.png" alt="Meu GitHub" style="width: 80px; height: 80px; margin-top: 8px; margin-left: 30px; margin-right: 25px;"><a href="https://github.com/Navarrasa" target="_blank" rel="external">Meu GitHub</a></div>
+            <div class="box1"><img src="/media/In.png" alt="Meu LinkedIn" style="width: 80px; height: 80px; margin-top: 8px; margin-left: 30px; margin-right: 25px;"><a href="https://www.linkedin.com/in/gustavo-bruno-90344a272/" target="_blank" rel="external">Meu LinkedIn</a></div>
+        </div>
+    </footer>
+</body>
+</html>
