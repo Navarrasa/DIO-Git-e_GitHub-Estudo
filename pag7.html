@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo Branches</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <a href="index.html" id="logo-principal"><img src="media/principal.png" alt="Home"></a>
+        <h1 id="principal">Lidando com Branches</h1>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="pag2.html">VCS</a></li>
+                    <li><a href="pag3.html">Git e GitHub</a></li>
+                    <li><a href="pag4.html">Configurando o Git</a></li>
+                    <li><a href="pag5.html">Repositórios</a></li>
+                    <li><a href="pag6.html">Baixando Alterações</a></li>
+                    <li><a href="pag7.html">Branches</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <h1>Criando Branches</h1>
+        <p>As Branchs, ou "ramos", são ramificações de seu projeto, ponteiros que demarcam os commits realizados, sendo trabalhadas de maneira independente, isso porquê podemos criar diversas branchs durante os processos no Git, para que possamos adicionar funcionalidades em nosso projeto, sem alterar a branch principal, em que está sendo desenvolvida.</p>
+        <p>Para exemplificar, veja a imagem abaixo:</p>
+        <img src="media/branches.png" alt="Branches" style="width: 600px ;">
+        <p>Em nossos commits, podemos ver o branch em que se está sendo utilizada. Para visualizar os commits realizados, digitamos <span class="codigo">git log</span>, onde mostrará todos os commits e em qual branch eles estão sendo desenvolvidos.</p>
+        <p style="display: flex;;"><img src="media/git_log.png" alt="Git Log" style="margin-right: 10px;"> <br>Observe que: No log, podemos observar o nosso user.name e user.email, previamente configurados. <br>Ao lado do ID do commit, está a branch utilizada.</p>
+        <p>Para criar uma nova branch, usamos o seguinte comando no Git Bash: <span class="codigo">git chekout -b nomedabranch</span><br>Este comando criará uma nova branch e essa branch estará sendo desenvolvida a partir do último commit realizado pela branch principal &#40;main ou master&#41;<br><img src="media/nova_branch.png" alt="New branch"></p><p>Para alterarmos novamente para a branch principal, use o comando <span class="codigo">git chekout main/master</span> &#40;O motivo de não ter o -b desta vez é porquê estamos trocando de branch e não criando uma nova, fica a dica!&#41;</p>
+        <p>Se quisermos ver a lista de branchs disponíveis e seus últimos commits, podemos utilizar o comando <span class="codigo">git branch -v</span></p>
+        <h1>Mesclando Branches</h1>
+        <p>Caso seja necessário que as alterações da branch nova seja incluída à branch principal, precisaremos mesclar elas. <br>Nesse caso, para mesclar uma branch, usaremos o comando <span class="codigo">git merge nomedabranch</span>, e essa branch selecionada será mesclada à branch principal</p>
+        <img src="media/git_merge.png" alt="Git Merge">
+        <h1>Deletando Branches</h1>
+        <p>Quando a branch deixar de ser utilizada durante o desenvolvimento de uma nova função, podemos deletar ela pelo Git Bash com o comando <span class="codigo">git branch -d nomedabranch</span>.</p>
+        <h1>Trantando de Conflitos e Comandos úteis</h1>
+        <h3>Conflitos de Merge</h3>
+        <p>Ocorre quando há alterações concorrentes entre dois colegas de equipe, acarretando em um arquivo com as duas versões trabalhadas. Para tratarmos deste conflito, os colegas deverão escolher qual das versões eles irão manter, ou desfazer as alterações, para que o problema seja cessado</p>
+        <h1>Comandos úteis do dia a dia</h1>
+        <h2>Baixando conteúdo da Branch remota sem mesclar com a Branch local</h2>
+        <p>Usamos o comando <span class="codigo">git fetch origin/main</span> sendo origin referente ao repositório remoto e main referenciando a branch principal. Após isso, podemos utilizar o comando <span class="codigo">git merge</span>, para baixarmos o conteúdo da branch.</p>
+        <h2>Selecionando uma branch para clonar</h2>
+        <p>Há vezes em que nos deparamos com repositórios que estão cheios de diferentes branchs e precisamos apenas de uma para fazer o download. É bem simples selecionar a branch, para isso, abrimos o Git Bash, e realizamos o comando <span class="codigo">git clone URL --branch nomedabranch --single-branch</span>. Caso não seja especificado o nome da branch solicitada, o comando irá clonar apenas a branch principal.</p>
+        <h2>Armazenar alterações</h2>
+        <p>Quando precisamos alterar branchs, mas há modificações pendentes e não queremos que essa modificação seja aplicada na branch, usamos o comando <span class="codigo">git stash</span>, para armazenar as alterações realizadas. Para visualizar a quantidade de stashs, temos o comando <span class="codigo">git stach list</span>. Com essas alterações armazenadas, temos duas opções de comando, <span class="codigo">git stash pop</span>, para trazer as alterações armazenadas e excluir as alterações recentes ou <span class="codigo">git stash apply</span>, para manter as modificações armazenadas.</p>
+        <p>Para aprender mais sobre o Git, <a href="https://git-scm.com/docs" class="link" rel="external" target="_blank">clique aqui!</a></p>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="box1">Página Web desenvolvida como material de estudo do curso do <a href="https://web.dio.me/home" target="_blank">Digital Inovation One</a></div>
+            <div class="box1">Curso de Microsoft Azure AI Fundamentals AI-900, Git e GitHub, lecionado por <a href="https://github.com/elidianaandrade/dio-curso-git-github" target="_blank">Elidiana Andrade</a></div>
+            <div class="box1"><img src="media/inst.png" alt="Meu LinkedIn" style="width: 80px; height: 80px; margin-top: 8px; margin-left: 30px; margin-right: 25px;"><a href="https://www.instagram.com/gustavo_locutor/" target="_blank" rel="external">Meu Instagram</a></div>
+            <div class="box1"><img src="media/github.png" alt="Meu GitHub" style="width: 80px; height: 80px; margin-top: 8px; margin-left: 30px; margin-right: 25px;"><a href="https://github.com/Navarrasa" target="_blank" rel="external">Meu GitHub</a></div>
+            <div class="box1"><img src="media/In.png" alt="Meu LinkedIn" style="width: 80px; height: 80px; margin-top: 8px; margin-left: 30px; margin-right: 25px;"><a href="https://www.linkedin.com/in/gustavo-bruno-90344a272/" target="_blank" rel="external">Meu LinkedIn</a></div>
+        </div>
+    </footer>
+</body>
+</html>

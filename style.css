@@ -1,0 +1,105 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+/*
+Paleta utilizada:
+--coquelicot: #fb4f28;
+--black: #010409;
+--cosmic-latte: #f7f3e3;
+--silver: #b3b6b7;
+--dark-cyan: #548687;
+--Dark Slate Gray: #304C4D;
+*/
+*{
+    text-align: justify;
+}
+body{
+    background-color: #010409;
+}
+header{
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 10px solid #B3B6B7;
+    width: 100%;
+    margin-bottom: 20px;   
+}
+#principal{
+    color: #F7F3E3;
+    font-size: 2em;
+    font-family: 'Kode Mono','sans-serif';
+    margin-left: 10px;
+}
+#navbar ul li{
+    display: inline-block;
+    background-color: #020407;
+    margin: 0;
+    list-style-type: none;
+    margin: 0;
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: white;
+    background-color: #020407;
+    display: block;
+    font-size: 25px;
+    padding: 15px;
+}
+#navbar ul li a:hover {
+    opacity: .6;
+    transition: 0.5s;
+    text-decoration: underline white;
+}
+main{
+    background-color: #fb4f28;
+    color: #F7F3E3;
+    margin: auto;
+    text-indent: 20px;
+    padding: 30px;
+    width: 50%;
+    border-radius: 6px;
+    font-size: 20px;
+    font-family: 'Roboto','Helvetica','sans-serif'; 
+}
+#logo-principal{
+    margin: 15px 10px 10px 10px;
+}
+.codigo{
+    font-size: 18px;
+    font-style: italic;
+}
+.link{
+    color: white;
+}
+.big{
+    font-size: 30px;
+}
+footer{
+    border-top: 12px solid #B3B6B7;
+    margin-top: 4em;
+    color: #F7F3E3;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2em;
+}
+.box1{
+    background-color: #be4f36;
+    height: 120px;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    border: 2px solid white;
+    color: #F7F3E3;
+    text-indent: 10px;
+    font-size: 18px;
+    padding: 5px;
+    display: grid;
+    place-items: center;
+}
+.box1 a{
+    color: #F7F3E3;
+}
